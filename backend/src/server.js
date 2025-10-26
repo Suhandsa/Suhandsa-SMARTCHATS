@@ -10,6 +10,7 @@ import "dotenv/config";
 
 import authRoutes from "./routes/auth.route.js";
 import userRoutes from "./routes/user.route.js";
+import chatRoutes from "./routes/chat.route.js";
 import { connectdb } from "./lib/db.js";
 
 const app = express(); 
@@ -22,7 +23,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/outh",authRoutes);
 app.use("/api/outh",userRoutes);
 
-
+app.use("/api/chat",chatRoutes)
 
 
 app.listen(PORT, () =>{
