@@ -7,11 +7,15 @@ import HomePage from './pages/HomePage.jsx';
 import ChatPage from './pages/chatPage.jsx';
 import CallPage from './pages/CallPage.jsx';
 import NotificationsPage from './pages/NotificationsPage.jsx';
+
+import toast, {Toaster} from 'react-hot-toast'
 const App = () => {
   return (
 
       <div>
+         <button onClick={()=>{ toast.success("Hello world")}}>Test Button</button>
         <Routes>
+         
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/onboarding" element={<OnboardingPage />} />
@@ -20,6 +24,7 @@ const App = () => {
           <Route path="/call" element={<CallPage />} />
           <Route path="/notifications" element={<NotificationsPage />} />
         </Routes>
+        <Toaster position="bottom-cornor" reverseOrder={false} />
       </div>
   
   );
