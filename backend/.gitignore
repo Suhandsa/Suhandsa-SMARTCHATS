@@ -1,7 +1,0 @@
-.env
-node_modules/
-dist/
-build/
-config
-package-lock.json
-yarn.lock
