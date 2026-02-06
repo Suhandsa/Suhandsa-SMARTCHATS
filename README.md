@@ -36,6 +36,17 @@ SmartChats allows users to communicate instantly through a clean and responsive 
 - **Protected Routes**
 
 ---
+---
+
+## 🌐 Live Demo
+
+The project is live and deployed on Render:
+
+🔗 https://suhandsa-smartchats.onrender.com
+
+---
+
+
 
 ## 🔧 Getting Started
 
